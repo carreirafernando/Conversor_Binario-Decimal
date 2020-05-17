@@ -20,14 +20,15 @@ def decimal_binario():
     if numero == 1:
         binario.append(numero)
     binario.reverse()
-    return binario
+    for i in binario:
+        print(i, end='')
 
 while True:
-    print('Digite "sair" para terminar!')
+    print('\nDigite "sair" para terminar!')
     escolha = str(input('Quer tranformar par Binário ou Decimal [B] ou [D]: ')).lower()
     if escolha == 'sair':
         break
     if escolha == 'b':
-        print(decimal_binario())
+        decimal_binario()
     elif escolha == 'd':
         print(binario_decimal())
